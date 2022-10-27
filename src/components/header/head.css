@@ -1,0 +1,13 @@
+.container-head{
+    border: 1px solid black;
+    width: 100%;
+    height: 70px;
+}
+#Btn{
+    margin-right: 70vw !important;
+    height: 50px;
+    margin: 10px;
+}
+input{
+    height: 50px;   
+}
