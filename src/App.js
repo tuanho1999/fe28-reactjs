@@ -2,6 +2,7 @@ import "./App.css";
 import Card from "./components/card";
 import Head from "./components/header/head";
 import Sidebar from "./components/sidebar/sidebar";
+import Pagination from "./components/pagination/foot";
 
 function App() {
   return (
@@ -34,7 +35,10 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="footer"><Pagination/></div>
     </div>
+    
+    
   );
 }
 
