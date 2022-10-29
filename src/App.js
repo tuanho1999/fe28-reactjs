@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Card from "./components/card";
 import Head from "./components/header/head";
@@ -16,22 +15,22 @@ function App() {
         </div>
         <div className="handle-card">
           <div className="container">
-            <Card status="doing" />
-            <Card status="doing" />
-            <Card status="doing" />
-            <Card status="doing" />
+            <Card status="NEW"/>
+            <Card status="NEW"/>
+            <Card status="NEW"/>
+            <Card status="NEW"/>
           </div>
           <div className="container">
-            <Card status="doing" />
-            <Card status="doing" />
-            <Card status="doing" />
-            <Card status="doing" />
+            <Card status="NEW"/>
+            <Card status="NEW"/>
+            <Card status="NEW"/>
+            <Card status="NEW"/>
           </div>
           <div className="container">
-            <Card status="doing" />
-            <Card status="doing" />
-            <Card status="doing" />
-            <Card status="doing" />
+            <Card status="NEW"/>
+            <Card status="NEW"/>
+            <Card status="NEW"/>
+            <Card status="NEW"/>
           </div>
         </div>
       </div>

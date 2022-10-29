@@ -9,10 +9,10 @@ function Sidebar() {
         <div>
             <nav>
                 <ul>
-                    <li>All Task</li>
-                    <li>New Task</li>
-                    <li>Doing Task</li>
-                    <li>Done Task</li>
+                    <li><a href="">All Task</a></li>
+                    <li><a href="">New Task</a></li>
+                    <li><a href="">Doing Task</a></li>
+                    <li><a href="">Done Task</a></li>
                 </ul>
             </nav>
         </div>

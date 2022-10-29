@@ -3,15 +3,15 @@
   margin-bottom: 10px;
 }
 .handle-head{
-  background-color: rgb(140, 56, 56);
+  background-color: aqua;
 }
 .container-display{
   display: flex;
 }
 .handle-sidebar{
   border-right: 1px solid black;
-  width: 10%;
-  background-color: rgb(222, 148, 10);
+  width: 12%;
+  background-color: orangered;
 }
 .handle-card{
   margin: 10px;
