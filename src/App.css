@@ -1,7 +1,6 @@
 .container{
   display: flex;
   margin-bottom: 10px;
-  background-color: rgb(255, 255, 2);
 }
 .handle-head{
   background-color: green;

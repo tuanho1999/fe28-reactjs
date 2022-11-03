@@ -1,0 +1,25 @@
+#description{
+    height: 60px;
+    width: 200px;
+}
+.container{
+    padding-left: 500px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+input{
+    background-color: white;
+    
+}
+#title , #creator{
+    height: 20px;
+    
+}
+#submit{
+    margin-top: 40px;
+}
+#submit:active{
+    background-color: gold;
+    
+}

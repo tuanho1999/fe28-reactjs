@@ -9,6 +9,7 @@ function Card({ status }) {
   let adjust=(event)=>{
     setMytask(event.target.value);
   }
+  
   return (
     <div>
         <div className="card-body">
