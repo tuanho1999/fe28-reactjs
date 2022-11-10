@@ -3,8 +3,9 @@ import Card from "./components/card";
 import Head from "./components/header/head";
 import Sidebar from "./components/sidebar/sidebar";
 import Pagination from "./components/pagination/foot";
-import Text from "./components/text/text";
+import Text from "./components/form/text";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Counter from "./components/counter";
 
 
 function App() {
@@ -19,9 +20,9 @@ function App() {
         <div className="handle-sidebar">
           <Sidebar />
         </div>
-        <div>
+        {/* <div>
           <Text />
-        </div>
+        </div> */}
         {/* <div className="handle-card">
           <div className="container">
             <Card status="NEW"/>
@@ -42,12 +43,13 @@ function App() {
             <Card status="NEW"/>
           </div>
         </div> */}
-        <BrowserRouter>
+        
         <Routes>
-          <Route path="/Home" element={<Head />} />
-          <Route path="/Card" element={<Text />} />
+          <Route path="/Home" element={<Card />} />
+          <Route path="/Form" element={<Text />} />
         </Routes>
-      </BrowserRouter>
+        {/* <Counter/> */}
+      
       </div>
       <div className="footer">
         <Pagination />

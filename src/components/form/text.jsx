@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './text.css'
+import { Navigate, useNavigate } from 'react-router-dom';
+
 
 
 
@@ -8,9 +10,10 @@ Text.propTypes = {};
 
 
 function Text(props) {
+    const myData = localStorage.getItem('Form')? JSON.parse(localStorage.getItem('Form')): [];
     
     const [formValue, setFormValue] =useState({
-        id:1 ,
+        id:1,
         title:'',
         creator:'',
         status:'NEW',
@@ -18,35 +21,40 @@ function Text(props) {
     })
     
     const handleOnChange=(e)=>{
-        setFormValue({
+        setFormValue((formValue)=> ({
             ...formValue,
             [e.target.name] : e.target.value,
-        });
+        }));
         
     }
+    let Navigate = useNavigate();
     const handCreateTask =(event)=>{
         event.preventDefault();
-        let myData=[];
         myData.push(formValue);
         console.log(formValue);
         localStorage.setItem('Form',JSON.stringify(myData));
+        let path1= '/Home';
+        Navigate(path1);
     }
+    
     return (
         <form className='container' onSubmit={handCreateTask}>
             <label htmlFor="Title">Title :</label>
             <input 
+            required
             type='text' 
             id='title' 
             value={formValue.title} 
             onChange={handleOnChange} 
-            name='title'/><br></br>
+            name='title' /><br></br>
             <label htmlFor="Creator">Creator :</label>
             <input 
+            required
             type='text' 
             id='creator' 
             value={formValue.creator} 
             onChange={handleOnChange} 
-            name='creator'/><br></br>
+            name='creator' /><br></br>
             <label htmlFor="Status">Status :</label>
             <select 
             className='status_info' 
@@ -59,18 +67,20 @@ function Text(props) {
             </select><br></br>
             <label htmlFor="Description">Description :</label>
             <input 
+            required
             type='textarea' 
             id='description' 
             placeholder='type something' 
             value={formValue.description} 
             onChange={handleOnChange} 
-            name='description'/>
+            name='description' />
             <input 
             type="submit" 
             value="SAVE" 
-            id='submit'/>
+            
+            />
         </form>
     );
-}
 
+}
 export default Text;

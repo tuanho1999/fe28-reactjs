@@ -10,6 +10,12 @@
     cursor: pointer;
     background-color:yellow;
 }
+#Btn:hover{
+    background-color: red;
+}
+#BtnSubmit:hover{
+    background-color: red;
+}
 input{
     height: 40px;  
     cursor: pointer; 

@@ -6,7 +6,15 @@
     padding-left: 500px;
     display: flex;
     flex-direction: column;
-    line-height: 30px;
+    line-height: 18px;
+    border: 2px solid black;
+    margin-left: 380px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: brown;
+    color: blanchedalmond;
+    height: 350px;
+    
 }
 input{
     background-color: white;
